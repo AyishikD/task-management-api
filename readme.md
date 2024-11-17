@@ -29,8 +29,9 @@ A simple, secure RESTful API for managing tasks, built with **Node.js** and **Ex
 
 - **Backend Framework**: Express.js
 - **Authentication**: JSON Web Tokens (JWT)
-- **Testing**: Mocha, Chai, Supertest
+- **Testing**: Jest
 - **Data Storage**: In-memory (for simplicity)
+- **Api Test**: Postman
 
 ---
 
@@ -59,7 +60,6 @@ A simple, secure RESTful API for managing tasks, built with **Node.js** and **Ex
    Create a `.env` file in the root directory and add the following:
 
    ```bash
-   env
    JWT_SECRET=your-secret-key
    PORT=3000
    ```
@@ -87,7 +87,7 @@ A simple, secure RESTful API for managing tasks, built with **Node.js** and **Ex
 | Method | Endpoint         | Description              | Authorization |
 |--------|------------------|--------------------------|---------------|
 | `POST` | `/auth/register` | Register a new user      | No            |
-| `POST` | `/auth/login`    | Login to get a JWT token | No            |
+| `POST` | `/auth/login`    | Login to get a JWT token | Yes            |
 
 ### Task Endpoints
 
